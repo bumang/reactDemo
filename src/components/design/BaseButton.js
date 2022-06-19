@@ -1,15 +1,7 @@
-const BaseButton = (props) => {
-    const props={
-        color,
-        backgroundColor,
-        body,
-        border
-    }
-    return (  
-    <div className="s-h-right">
-        <button>body</button>    
-    </div>
-    );
-}
- 
+const BaseButton = ({ color, backgroundColor, children, body, border }) => (
+	<div className="s-h-right">
+		<button>{children}</button>
+	</div>
+);
+
 export default BaseButton;
